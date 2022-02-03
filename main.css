@@ -1,0 +1,127 @@
+*{
+    font-family: 'Roboto';
+    margin: 0;
+}
+body{
+    background-color: #E1F083;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 15px;
+}
+.city{
+    width: 80%;
+    /* border-radius: 10px; */
+    border: none
+}
+.weather{
+    border: 1px solid #000;
+    padding: 60px;
+    border-radius: 15px;
+}
+.TopPart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.ApplicationTitle{
+    font-size: 55px;
+    max-width: 438px;
+    position: relative;
+}
+.ApplicationTitle::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -19px;
+    left: 211px;
+    background-repeat: no-repeat;
+    background-image: url(img/sun.svg);
+    background-size: contain;
+}
+.ApplicationInput{
+    width: 450px;
+    height: 36px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.inputWrapper{
+    position: relative;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: row;
+}
+.search{
+    background-image: url(img/lupa.svg);
+    width: 53px;
+    height: 43px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.mainWrapper{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding: 30px 0;
+}
+.cardWeather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 320px;
+    justify-content: center;
+    border: 1px solid #D5FF7C;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 0 20px;
+    position: relative;
+}
+.cardWeather h2{
+    font-size: 50px;
+    min-width: 200px;
+}
+.cardWeather p{
+    font-size: 35px;
+}
+.navigation{
+    background-color: transparent;
+    align-self: center;
+    border:none;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.left{
+    background-image: url(img/left.svg);
+}
+.right{
+    background-image: url(img/right.png);
+}
+.closeButton {
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
