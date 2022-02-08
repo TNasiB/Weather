@@ -27,7 +27,7 @@ btnL.addEventListener('click', () => {
 function getWeather() {
     const query = inputWeather.value
     inputWeather.value = ''
-    fetch(`http://api.weatherapi.com/v1/current.json?key=b3d38b359d3e4c10ad2122202222801&q=${query}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=b3d38b359d3e4c10ad2122202222801&q=${query}&aqi=no`)
     .then(response => response.json())
     .then(data => createCard(data, query))
 }
